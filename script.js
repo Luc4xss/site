@@ -1,0 +1,1 @@
+const botao=document.querySelector("#botao"),select=document.querySelector("#options"),input=document.querySelector("#caixa");botao.addEventListener("click",()=>{select.innerHTML="";let a=input.value;if(a)for(let b,c=0;10>=c;c++)b=document.createElement("option"),select.appendChild(b),b.value=`OPÇÃO ${c}`,b.innerHTML=`${a} X ${c} = ${a*c}`});
