@@ -1,1 +1,83 @@
-@import "https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";*{margin:0;padding:0;font-family:Poppins}body{display:flex;height:100vh;align-items:center;justify-content:center}html{font-size:62.5%}.tabuada{display:flex;flex-direction:column;gap:.5rem;padding:1rem;border-radius:.5rem;background-color:#2e56c4;text-align:center}h1{color:#fff;font-family:Arial,Helvetica,sans-serif}input{border-radius:.8rem;border:none;padding:.5rem}button{font-size:1rem;padding:.5rem}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(80deg, rgb(0, 110, 255), rgb(152, 17, 206));
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#tarefa {
+    padding: .4rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+    outline: none;
+}
+
+#botao {
+    padding: .6rem;
+    border: none;
+    color: white;
+    border-radius: .4rem;
+    background-color: rgb(152, 17, 206);
+}
+
+.interacao {
+    background-color: white;
+    padding: 1.4rem;
+    border-radius: 1rem;
+}
+
+.tarefas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    min-height: 2rem;
+}
+
+.tarefas h1 {
+    font-size: 1.6rem;
+}
+
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: .4rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .4);
+}
+
+.delete {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.error { 
+    border: 1px solid red !important;
+} 
+
+.error::placeholder {
+    color: red;
+}
